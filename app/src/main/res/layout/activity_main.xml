@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ed_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="@string/str_ed_phone"
+        android:minWidth="80dp"
+        app:layout_constraintTop_toBottomOf="@+id/app_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="80dp"
+        />
+
+    <EditText
+        android:id="@+id/ed_sms_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:hint="@string/str_ed_sms_text"
+        app:layout_constraintTop_toBottomOf="@+id/ed_phone"
+        app:layout_constraintStart_toStartOf="@+id/ed_phone"
+        app:layout_constraintEnd_toEndOf="@+id/ed_phone"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/str_btn_call"
+        android:textAllCaps="false"
+        android:minWidth="40dp"
+        style="@style/ColorStyleButton"
+        app:layout_constraintStart_toStartOf="@+id/ed_phone"
+        app:layout_constraintTop_toBottomOf="@+id/ed_sms_text" />
+
+
+    <Button
+        android:id="@+id/btn_sms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/str_btn_sms"
+        android:textAllCaps="false"
+        android:minWidth="40dp"
+        style="@style/ColorStyleButton"
+        app:layout_constraintEnd_toEndOf="@+id/ed_phone"
+        app:layout_constraintTop_toBottomOf="@+id/ed_sms_text" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

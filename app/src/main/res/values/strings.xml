@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">dz_7_2_2_and</string>
+    <string name="title">Позвонить по телефону/отправить СМС</string>
+    <string name="str_ed_phone">Номер телефона</string>
+    <string name="str_ed_sms_text">Текст сообщения</string>
+    <string name="str_btn_call">Позвонить</string>
+    <string name="str_btn_sms">Отправить</string>
+</resources>
